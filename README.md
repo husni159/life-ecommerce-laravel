@@ -92,6 +92,7 @@ php artisan serve
 
 - `GET /api/products` – List products (paginated)
 - `GET /api/products/{id}` – Get product details
+- `GET products/category/{id}` – Get products by category
 - `POST /api/products` – Create (Admin only)
 - `PUT /api/products/{id}` – Update (Admin only)
 - `DELETE /api/products/{id}` – Delete (Admin only)
@@ -100,6 +101,9 @@ php artisan serve
 
 - `GET /api/categories` – List categories
 - `POST /api/categories` – Create (Admin only)
+- `GET /api/categories/{id}` – Get category details
+- `PUT api/categories/{id}` – Update (Admin only)
+- `DELETE /api/categories/{id}` – Delete (Admin only)
 
 ### 📑 Orders
 
