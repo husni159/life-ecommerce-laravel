@@ -1,0 +1,624 @@
+{
+	"info": {
+		"_postman_id": "f69d8487-a753-4a01-b752-bf89bb8345f8",
+		"name": "life-hospital",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11757367"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:8000/api/categories/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|f12U20gRoifAwG8sRwmlMhelNlWdWKgQDDqzWQf4",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"categoryupdated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/orders/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|kN3FJSTWGCW7YAwvzWqdYZDjJDsjjmx5Bc8NHc22",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders",
+						"1"
+					]
+				},
+				"description": "Getting single order details \r\n"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|kN3FJSTWGCW7YAwvzWqdYZDjJDsjjmx5Bc8NHc22",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders"
+					]
+				},
+				"description": "Viewing order history (for authenticated users)"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/categories/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				},
+				"description": "Fetch a category"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products/3",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|f12U20gRoifAwG8sRwmlMhelNlWdWKgQDDqzWQf4",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"3"
+					]
+				},
+				"description": "Delete a product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|f12U20gRoifAwG8sRwmlMhelNlWdWKgQDDqzWQf4",
+						"type": "default"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Updated Product\",\r\n  \"price\": 19.99, \r\n  \"slug\" : \"t-shirt1\",\r\n  \"description\": \"T-shirtdesc\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				},
+				"description": "Update a Product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products/category/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/category/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"category",
+						"1"
+					]
+				},
+				"description": "Filtering products by category "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/categories",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 1|f12U20gRoifAwG8sRwmlMhelNlWdWKgQDDqzWQf4",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "category2",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/categories",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"categories"
+					]
+				},
+				"description": "Create a Category"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products/1",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products",
+						"1"
+					]
+				},
+				"description": "Getting single product details "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "default"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer 4|dGHuDx5JSi20M8nGsQy2LtkMdJ7seowT8gKKh40X",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "multipart/form-data",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "T-shirt-new",
+							"type": "text"
+						},
+						{
+							"key": "slug",
+							"value": "T-shirt-new",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "T-shirt",
+							"type": "text"
+						},
+						{
+							"key": "price",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "stock_quantity",
+							"value": "100",
+							"type": "text"
+						},
+						{
+							"key": "categories[]",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "PUT",
+							"type": "text"
+						},
+						{
+							"key": "images[]",
+							"type": "file",
+							"src": "/C:/Users/USER/Pictures/adhaarcard.PNG"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/update-product/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"update-product",
+						"1"
+					]
+				},
+				"description": "Create a product"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/products",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/products?page=2",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"products"
+					],
+					"query": [
+						{
+							"key": "page",
+							"value": "2"
+						}
+					]
+				},
+				"description": "Listing all products (with pagination) "
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "username",
+							"value": "admin_uT53d",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				},
+				"description": "Login end point"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/register",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "email",
+							"value": "admin@gmail.com",
+							"type": "default"
+						},
+						{
+							"key": "role",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "default"
+						},
+						{
+							"key": "username",
+							"value": "admin",
+							"type": "default"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "12345678",
+							"type": "default"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				},
+				"description": "Registration end point"
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:8000/api/orders",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer 3|kN3FJSTWGCW7YAwvzWqdYZDjJDsjjmx5Bc8NHc22",
+						"type": "default"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\" :[\r\n        {\"product_id\":1,\"quantity\":3, \"price\":110}       \r\n    ]\r\n}"
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/orders",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"orders"
+					]
+				},
+				"description": "Create order"
+			},
+			"response": []
+		}
+	]
+}
