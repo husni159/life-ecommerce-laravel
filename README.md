@@ -122,7 +122,7 @@ php artisan serve
 
 You can find the Postman collection in the `/postman` folder:
 
-📁 [`life-hospital.postman_collection.json`](postman/laravel-ecommerce-api.postman_collection.json)
+📁 [`life-hospital.postman_collection.json`](postman/life-hospital.postman_collection.json)
 
 Import it into Postman and set your environment variables like `{{base_url}}` and `{{token}}`.
 
